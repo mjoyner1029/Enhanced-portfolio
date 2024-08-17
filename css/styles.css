@@ -1,0 +1,213 @@
+/* General Styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light Gray */
+    color: #333; /* Dark Gray */
+  }
+  
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    background-color: #ffffff; /* White */
+    color: #333; /* Dark Gray */
+    padding: 0.5rem 1rem;
+    border-bottom: 2px solid #dcdcdc; /* Light Gray Border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-brand {
+    color: #add8e6; /* Light Blue */
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-left: 1rem;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #333; /* Dark Gray */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ffffff; /* White */
+    background-color: #add8e6; /* Light Blue */
+    transform: scale(1.05);
+  }
+  
+  /* Jumbotron Styles */
+  .jumbotron {
+    background-color: #add8e6; /* Light Blue */
+    color: #ffffff; /* White */
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow */
+  }
+  
+  .jumbotron h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .jumbotron p {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+  
+  /* Portfolio Section Styles */
+  .portfolio-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #ffffff; /* White */
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .portfolio-section h2 {
+    color: #add8e6; /* Light Blue */
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .portfolio-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .portfolio-section a {
+    color: #1e90ff; /* Dodger Blue */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .portfolio-section a:hover {
+    color: #4682b4; /* Steel Blue */
+    text-decoration: underline;
+  }
+  
+  /* Form Styles */
+  form {
+    display: grid;
+    gap: 1rem;
+    max-width: 600px;
+    margin: auto;
+    padding: 1rem;
+    background-color: #ffffff; /* White */
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  form label {
+    font-weight: bold;
+    color: #333; /* Dark Gray */
+  }
+  
+  form input[type="text"],
+  form select,
+  form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #dcdcdc; /* Light Gray Border */
+    border-radius: 0.25rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  form input[type="text"]:focus,
+  form select:focus,
+  form textarea:focus {
+    border-color: #add8e6; /* Light Blue */
+    box-shadow: 0 0 5px rgba(173, 216, 230, 0.5); /* Light Blue Glow */
+    outline: none;
+  }
+  
+  form input[type="submit"] {
+    background-color: #add8e6; /* Light Blue */
+    color: #ffffff; /* White */
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #9fc0d8; /* Slightly Darker Light Blue */
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar .container {
+      flex-direction: column;
+    }
+  
+    .navbar-nav {
+      margin-top: 1rem;
+    }
+  
+    .navbar-nav .nav-item {
+      display: block;
+      margin-left: 0;
+      margin-bottom: 0.5rem;
+    }
+  
+    .container {
+      width: 90%;
+    }
+  }
+  
+  /* Interactive Effects */
+  button,
+  a {
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover,
+  a:hover {
+    background-color: #9fc0d8; /* Slightly Darker Light Blue for interactive elements */
+    color: #ffffff; /* White */
+    transform: scale(1.05);
+  }
+  
+  button {
+    border: none;
+    background-color: #add8e6; /* Light Blue */
+    color: #ffffff; /* White */
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
